@@ -1,0 +1,167 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #000; /* Default font color is black */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #00bcd4; /* Aquablue */
+    padding: 20px 0;
+    color: white; /* Keep header text white for contrast */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    animation: moveTitle 5s infinite;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9800; /* Orange color on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: white; /* White background for sections */
+    color: #000; /* Black text for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for sections */
+section:hover {
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.8); /* Aquablue color shadow */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #ff9800;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00bcd4; /* Aquablue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .quick-links {
+    margin-bottom: 20px;
+}
+
+footer .quick-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .quick-links ul li {
+    margin-left: 20px;
+}
+
+footer .quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer .quick-links ul li a:hover {
+    color: #ff9800; /* Change color on hover */
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ff9800; /* Change color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    footer .quick-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .quick-links ul li {
+        margin: 10px 0;
+    }
+}
